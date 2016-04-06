@@ -8,7 +8,7 @@
    
 ## 使用方法
 請先確定電腦上已經安裝<b> OpenCV </b>和<b> numpy </b><br>
-可參考[如何在Windows安裝OpenCV Python設定]()<br>
+可參考[如何在Windows安裝OpenCV Python設定](https://github.com/twtrubiks/FaceDetect/tree/master/How%20Install%20OpenCV%20in%20on%20Windows%20for%20Python)<br>
 
 ```
 python face_detect.py [圖片檔名] [haarcascade.xml]
