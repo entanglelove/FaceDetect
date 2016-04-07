@@ -4,7 +4,7 @@
 * [Demo Video等待新增]() - Windows 
 
 ## 特色
-* 偵測臉部(圖片)
+* 臉部偵測(圖片)
    
 ## 使用方法
 請先確定電腦上已經安裝<b> OpenCV </b>和<b> numpy </b><br>
@@ -44,6 +44,10 @@ Run the code like this:
 If you want to understand how the code works, the details are here:
 
 https://realpython.com/blog/python/face-recognition-with-python/
+
+## 更多參考
+[記錄, OpenCV 學習路徑, (3) 人臉辨識 ](http://gogoprivateryan.blogspot.tw/2015/09/opencv-3-opencv-python-face-recognition.html)<br>
+這篇文章介紹的蠻詳細的，包括可以自己訓練一套專屬用途的 Cascade classifier<br>
 
 ## 執行環境
 * Windows 8.1
