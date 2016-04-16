@@ -1,7 +1,7 @@
 # FaceDetect
 臉部偵測 for Windows use Python <br>
 使用Python練習OpenCV，順便做個紀錄
-* [Demo Video等待新增]() - Windows 
+* [Demo Video](https://youtu.be/TnnSfnjw6js) - Windows 
 
 ## 特色
 * 臉部偵測(圖片)
