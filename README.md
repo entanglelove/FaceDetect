@@ -1,22 +1,46 @@
 # FaceDetect
-臉部偵測 for Windows use Python <br>
-使用Python練習OpenCV，順便做個紀錄
+臉部偵測 for Windows use Python 
+Python OpenCV Tutorial
+
+* [Demo Video]() - Windows - update  
 * [Demo Video](https://youtu.be/TnnSfnjw6js) - Windows 
 
 ## 特色
-* 臉部偵測(圖片)
-   
-## 使用方法
+* 圖片、影片 臉部偵測
+
+## 建立環境
+
+Python 3.5.2 + OpenCV 3.1.0   (建議用這個，更簡單)
+請參考[]()
+
+Python 2.7.3 + OpenCV 2.4.12
 請先確定電腦上已經安裝<b> OpenCV </b>和<b> numpy </b><br>
 可參考[如何在Windows安裝OpenCV Python設定](https://github.com/twtrubiks/FaceDetect/tree/master/How%20Install%20OpenCV%20in%20on%20Windows%20for%20Python)<br>
 
+## 如何使用
+
+Python 3.5.2 + OpenCV 3.1.0
 ```
-python face_detect.py [圖片檔名] [haarcascade.xml]
+python face_detect_python3.py
 ```
 
-## 執行範例 
-``` 
-python face_detect.py test1.jpg haarcascade_frontalface_alt.xml
+
+Python 2.7.3 + OpenCV 2.4.12
+```
+python face_detect_python2.py [圖片檔名] [haarcascade.xml]
+```
+
+## 執行範例
+
+Python 3.5.2 + OpenCV 3.1.0
+```
+python face_detect_python3.py
+```
+
+
+Python 2.7.3 + OpenCV 2.4.12
+```
+python face_detect_python2.py
 ```
 
 ## 執行過程
@@ -45,9 +69,30 @@ If you want to understand how the code works, the details are here:
 
 https://realpython.com/blog/python/face-recognition-with-python/
 
-## 更多參考
-[記錄, OpenCV 學習路徑, (3) 人臉辨識 ](http://gogoprivateryan.blogspot.tw/2015/09/opencv-3-opencv-python-face-recognition.html)<br>
-這篇文章介紹的蠻詳細的，包括可以自己訓練一套專屬用途的 Cascade classifier<br>
+## 後記 
+
+本篇文章所介紹的是 **臉部偵測 ( Face Detection )**，並不是 **臉部辨識 ( Face Recognize)**
+
+因為小弟有稍微研究一點***臉部辨識 ( Face Recognize)**，所以順便來分享我的心得
+
+如果要辦到***臉部辨識 ( Face Recognize)**，OpenCV 其實也可以辦到，可以透過OpenCV官網提供的演算法來完成，OpenCV官方有提供三種Face Recognition演算法，
+分別為 EigenFaceRecognizer、FisherFaceRecognizer、 LBPHFaceRecognizer。
+
+最後我選擇 LBPHFaceRecognizer，為什麼不選 EigenFaceRecognizer 或 FisherFaceRecognizer 呢?
+
+因為 LBPHFaceRecognizer 有幾個優點：
+1. 訓練和比對的圖片大小可以不一致。
+2. 比較不會受到光線以及角度的影響 ( 辨識率 )。
+3. 可以直接更新訓練資料庫，不用全部重新訓練。
+
+流程大致上是
+收集人臉 --> 訓練  --> 得到一個 dataSet 
+然後透過這個 dataSet  下去辨識。
+
+我認為使用 OpenCV 提供的Face Recognition演算法效果沒有非常好，或許可以考慮用目前最紅的深度學習 (Deep learning) 處理精準度的問題。
+ 
+
+
 
 ## 執行環境
 * Windows 8.1
