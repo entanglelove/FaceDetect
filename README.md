@@ -1,4 +1,5 @@
 # FaceDetect
+
 臉部偵測 use Python
 
 Python OpenCV Tutorial
@@ -20,55 +21,65 @@ Python OpenCV Tutorial
 **Python 2.7.3 + OpenCV 2.4.12**
 請參考
 
-可參考[如何在Windows安裝OpenCV Python設定](https://github.com/twtrubiks/FaceDetect/tree/master/How%20Install%20OpenCV%20in%20on%20Windows%20for%20Python)<br>
+可參考 [如何在Windows安裝OpenCV Python設定](https://github.com/twtrubiks/FaceDetect/tree/master/How%20Install%20OpenCV%20in%20on%20Windows%20for%20Python)
 
 ## 執行範例
 
 Python 3.5.2 + OpenCV 3.1.0
-```
+
+```cmd
 python face_detect_python3.py
 ```
+
 程式執行後，會自動跳出偵測臉部的圖片
 
 ![alt tag](http://i.imgur.com/u8m9lUf.jpg)
 
 透過 camera 偵測人臉
-```
+
+```cmd
 python face_detect_camera.py
 ```
+
 圖片會輸出到 camera 資料夾裡，會存 10 張。
 
 ![alt tag](http://i.imgur.com/YEcaMRg.jpg)
 
-
 Python 2.7.3 + OpenCV 2.4.12
-```
+
+```cmd
 python face_detect_python2.py test1.jpg haarcascade_frontalface_alt.xml
 ```
 
-
 ## 輸出
-目錄底下會多出一張名稱為 face_detection.jpg 的圖片 <br>
+
+目錄底下會多出一張名稱為 face_detection.jpg 的圖片
+
 ![alt tag](http://i.imgur.com/evl398U.jpg)
 
 ## 備註
 
-更多的<b> haarcascade </b>可到<b> opencv </b>路徑裡<b> opencv\sources\data\haarcascades </b>取得，
+更多的 **haarcascade** 可到 **opencv** 路徑裡 **opencv\sources\data\haarcascades** 取得，
 
-路徑底下還有<b> haarcascade_eye.xml </b>偵測眼睛之類的，大家可以自行摸索。
+路徑底下還有 **haarcascade_eye.xml** 偵測眼睛之類的，大家可以自行摸索。
 
-最後，請注意，這是<b> 臉部偵測 </b>，並不是 <b> 臉部辨識 </b>
+最後，請注意，這是 **臉部偵測** ，並不是 **臉部辨識**
 
 ## 其他
-更多的資訊可參考原作者<br>
+
+更多的資訊可參考原作者
 
 Run the code like this:
 
-*python face_detect.py abba.png haarcascade_frontalface_default.xml*
+```python
+python face_detect.py abba.png haarcascade_frontalface_default.xml
+```
 
 If you want to understand how the code works, the details are here:
 
+```url
 https://realpython.com/blog/python/face-recognition-with-python/
+```
 
 ## 後記
 
@@ -83,9 +94,10 @@ EigenFaceRecognizer、FisherFaceRecognizer、 LBPHFaceRecognizer。
 最後我選擇 LBPHFaceRecognizer，為什麼不選 EigenFaceRecognizer 或 FisherFaceRecognizer 呢?
 
 因為 LBPHFaceRecognizer 有幾個優點：
-1. 訓練和比對的圖片大小可以不一致。
-2. 比較不會受到光線以及角度的影響 ( 辨識率 )。
-3. 可以直接更新訓練資料庫，不用全部重新訓練。
+
+* 訓練和比對的圖片大小可以不一致。
+* 比較不會受到光線以及角度的影響 ( 辨識率 )。
+* 可以直接更新訓練資料庫，不用全部重新訓練。
 
 流程大致上是
 收集人臉 --> 訓練  --> 得到一個 dataSet
@@ -95,11 +107,12 @@ EigenFaceRecognizer、FisherFaceRecognizer、 LBPHFaceRecognizer。
 
 或許可以考慮用目前最紅的深度學習 (Deep learning) 處理精準度的問題。
 
-
 ## 執行環境
+
 * Windows 10
 * Python 3.5.2
 * OpenCV 3.1.0
 
 ## License
+
 MIT license
