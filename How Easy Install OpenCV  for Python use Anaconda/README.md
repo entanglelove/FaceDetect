@@ -1,6 +1,7 @@
 # 如何安裝 OpenCV3 - 使用 Anaconda
 
 How Easy Install OpenCV3 for Python use Anaconda
+
 * [Demo Video](https://youtu.be/u90KaU6svc4) - Use Anaconda
 
 大約一年前寫過一篇 [如何在Windows安裝OpenCV Python設定](https://github.com/twtrubiks/FaceDetect/blob/master/How%20Install%20OpenCV%20in%20on%20Windows%20for%20Python/README.md) ，那時候安裝OpenCV比較麻煩，
@@ -44,17 +45,15 @@ How Easy Install OpenCV3 for Python use Anaconda
 ## 如何安裝 OpenCV3
 
 使用cmd (命令提示字元) 輸入
-> conda install -c https://conda.anaconda.org/menpo opencv3
+> conda install -c `https://conda.anaconda.org/menpo opencv3`
 
 ![alt tag](http://i.imgur.com/LgSeS2z.jpg)
-
-
 
 最後確認是否成功安裝 opencv3，使用cmd (命令提示字元) 輸入
 
 > python
 
-```
+```python
 import cv2
 cv2.__version__
 ```
@@ -66,6 +65,7 @@ cv2.__version__
 恭喜你~  安裝成功了
 
 ## Environment
+
 * Windows 10
 * Python 3.5.2
 * OpenCV 3.1.0
